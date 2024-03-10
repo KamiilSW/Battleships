@@ -310,11 +310,12 @@ Partial Class Form1
         ' 
         ' Button1
         ' 
+        Button1.BackColor = Color.White
         Button1.Location = New Point(78, 47)
         Button1.Name = "Button1"
         Button1.Size = New Size(30, 29)
         Button1.TabIndex = 1
-        Button1.UseVisualStyleBackColor = True
+        Button1.UseVisualStyleBackColor = False
         ' 
         ' Button2
         ' 
@@ -2376,7 +2377,7 @@ Partial Class Form1
         ' 
         ' HidePlayer1
         ' 
-        HidePlayer1.Location = New Point(213, 179)
+        HidePlayer1.Location = New Point(58, 31)
         HidePlayer1.Name = "HidePlayer1"
         HidePlayer1.Size = New Size(302, 303)
         HidePlayer1.TabIndex = 259
@@ -2384,7 +2385,7 @@ Partial Class Form1
         ' 
         ' HidePlayer2
         ' 
-        HidePlayer2.Location = New Point(539, 31)
+        HidePlayer2.Location = New Point(540, 31)
         HidePlayer2.Name = "HidePlayer2"
         HidePlayer2.Size = New Size(302, 303)
         HidePlayer2.TabIndex = 260
