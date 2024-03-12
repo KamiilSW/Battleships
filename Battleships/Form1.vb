@@ -553,6 +553,7 @@
 
     End Sub
     Dim OnexClick As Boolean = False
+    Dim TwoxClick As Boolean = False
     Private Sub Player1Ship1x_Click(sender As Object, e As EventArgs) Handles Player1Ship1x.Click
         EnablePlayer1Ships()
         OnexClick = True
@@ -623,20 +624,20 @@
     Dim variable64 As Integer = 0
     Dim Onexships As Integer = 0
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        If Onexships >= 2 And variable1 = 0 Then
+        If Onexships >= 2 And variable1 = 0 And OnexClick = True Then
             MessageBox.Show("You already have the maximum amount of 1x ships")
             Exit Sub
         End If
 
         If OnexClick = True And variable1 = 0 Then
 
-                Button1.BackColor = Color.Red
-                Button1.ForeColor = Color.Red
-                variable1 = variable1 + 1
-                Onexships = Onexships + 1
-                Exit Sub
+            Button1.BackColor = Color.Red
+            Button1.ForeColor = Color.Red
+            variable1 = variable1 + 1
+            Onexships = Onexships + 1
+            Exit Sub
 
-            End If
+        End If
 
         If OnexClick = True And variable1 = 1 Then
 
@@ -649,20 +650,20 @@
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        If Onexships >= 2 And variable2 = 0 Then
+        If Onexships >= 2 And variable2 = 0 And OnexClick = True Then
             MessageBox.Show("You already have the maximum amount of 1x ships")
             Exit Sub
         End If
 
         If OnexClick = True And variable2 = 0 Then
 
-                Button2.BackColor = Color.Red
-                Button2.ForeColor = Color.Red
-                variable2 = variable2 + 1
-                Onexships = Onexships + 1
-                Exit Sub
+            Button2.BackColor = Color.Red
+            Button2.ForeColor = Color.Red
+            variable2 = variable2 + 1
+            Onexships = Onexships + 1
+            Exit Sub
 
-            End If
+        End If
 
         If OnexClick = True And variable2 = 1 Then
 
@@ -675,20 +676,20 @@
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        If Onexships >= 2 And variable3 = 0 Then
+        If Onexships >= 2 And variable3 = 0 And OnexClick = True Then
             MessageBox.Show("You already have the maximum amount of 1x ships")
             Exit Sub
         End If
 
         If OnexClick = True And variable3 = 0 Then
 
-                Button3.BackColor = Color.Red
-                Button3.ForeColor = Color.Red
-                variable3 = variable3 + 1
-                Onexships = Onexships + 1
-                Exit Sub
+            Button3.BackColor = Color.Red
+            Button3.ForeColor = Color.Red
+            variable3 = variable3 + 1
+            Onexships = Onexships + 1
+            Exit Sub
 
-            End If
+        End If
 
         If OnexClick = True And variable3 = 1 Then
 
@@ -701,7 +702,7 @@
     End Sub
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
-        If Onexships >= 2 And variable4 = 0 Then
+        If Onexships >= 2 And variable4 = 0 And OnexClick = True Then
             MessageBox.Show("You already have the maximum amount of 1x ships")
             Exit Sub
         End If
@@ -727,7 +728,7 @@
     End Sub
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
-        If Onexships >= 2 And variable5 = 0 Then
+        If Onexships >= 2 And variable5 = 0 And OnexClick = True Then
             MessageBox.Show("You already have the maximum amount of 1x ships")
             Exit Sub
         End If
@@ -753,7 +754,7 @@
     End Sub
 
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
-        If Onexships >= 2 And variable6 = 0 Then
+        If Onexships >= 2 And variable6 = 0 And OnexClick = True Then
             MessageBox.Show("You already have the maximum amount of 1x ships")
             Exit Sub
         End If
@@ -779,7 +780,7 @@
     End Sub
 
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
-        If Onexships >= 2 And variable7 = 0 Then
+        If Onexships >= 2 And variable7 = 0 And OnexClick = True Then
             MessageBox.Show("You already have the maximum amount of 1x ships")
             Exit Sub
         End If
@@ -805,7 +806,7 @@
     End Sub
 
     Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
-        If Onexships >= 2 And variable8 = 0 Then
+        If Onexships >= 2 And variable8 = 0 And OnexClick = True Then
             MessageBox.Show("You already have the maximum amount of 1x ships")
             Exit Sub
         End If
@@ -831,7 +832,7 @@
     End Sub
 
     Private Sub Button9_Click(sender As Object, e As EventArgs) Handles Button9.Click
-        If Onexships >= 2 And variable9 = 0 Then
+        If Onexships >= 2 And variable9 = 0 And OnexClick = True Then
             MessageBox.Show("You already have the maximum amount of 1x ships")
             Exit Sub
         End If
@@ -857,7 +858,7 @@
     End Sub
 
     Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
-        If Onexships >= 2 And variable10 = 0 Then
+        If Onexships >= 2 And variable10 = 0 And OnexClick = True Then
             MessageBox.Show("You already have the maximum amount of 1x ships")
             Exit Sub
         End If
@@ -883,7 +884,7 @@
     End Sub
 
     Private Sub Button11_Click(sender As Object, e As EventArgs) Handles Button11.Click
-        If Onexships >= 2 And variable11 = 0 Then
+        If Onexships >= 2 And variable11 = 0 And OnexClick = True Then
             MessageBox.Show("You already have the maximum amount of 1x ships")
             Exit Sub
         End If
@@ -909,7 +910,7 @@
     End Sub
 
     Private Sub Button12_Click(sender As Object, e As EventArgs) Handles Button12.Click
-        If Onexships >= 2 And variable12 = 0 Then
+        If Onexships >= 2 And variable12 = 0 And OnexClick = True Then
             MessageBox.Show("You already have the maximum amount of 1x ships")
             Exit Sub
         End If
@@ -935,7 +936,7 @@
     End Sub
 
     Private Sub Button13_Click(sender As Object, e As EventArgs) Handles Button13.Click
-        If Onexships >= 2 And variable13 = 0 Then
+        If Onexships >= 2 And variable13 = 0 And OnexClick = True Then
             MessageBox.Show("You already have the maximum amount of 1x ships")
             Exit Sub
         End If
@@ -961,7 +962,7 @@
     End Sub
 
     Private Sub Button14_Click(sender As Object, e As EventArgs) Handles Button14.Click
-        If Onexships >= 2 And variable14 = 0 Then
+        If Onexships >= 2 And variable14 = 0 And OnexClick = True Then
             MessageBox.Show("You already have the maximum amount of 1x ships")
             Exit Sub
         End If
@@ -987,7 +988,7 @@
     End Sub
 
     Private Sub Button15_Click(sender As Object, e As EventArgs) Handles Button15.Click
-        If Onexships >= 2 And variable15 = 0 Then
+        If Onexships >= 2 And variable15 = 0 And OnexClick = True Then
             MessageBox.Show("You already have the maximum amount of 1x ships")
             Exit Sub
         End If
@@ -1013,7 +1014,7 @@
     End Sub
 
     Private Sub Button16_Click(sender As Object, e As EventArgs) Handles Button16.Click
-        If Onexships >= 2 And variable16 = 0 Then
+        If Onexships >= 2 And variable16 = 0 And OnexClick = True Then
             MessageBox.Show("You already have the maximum amount of 1x ships")
             Exit Sub
         End If
@@ -1039,7 +1040,7 @@
     End Sub
 
     Private Sub Button17_Click(sender As Object, e As EventArgs) Handles Button17.Click
-        If Onexships >= 2 And variable17 = 0 Then
+        If Onexships >= 2 And variable17 = 0 And OnexClick = True Then
             MessageBox.Show("You already have the maximum amount of 1x ships")
             Exit Sub
         End If
@@ -1065,7 +1066,7 @@
     End Sub
 
     Private Sub Button18_Click(sender As Object, e As EventArgs) Handles Button18.Click
-        If Onexships >= 2 And variable18 = 0 Then
+        If Onexships >= 2 And variable18 = 0 And OnexClick = True Then
             MessageBox.Show("You already have the maximum amount of 1x ships")
             Exit Sub
         End If
@@ -1091,7 +1092,7 @@
     End Sub
 
     Private Sub Button19_Click(sender As Object, e As EventArgs) Handles Button19.Click
-        If Onexships >= 2 And variable19 = 0 Then
+        If Onexships >= 2 And variable19 = 0 And OnexClick = True Then
             MessageBox.Show("You already have the maximum amount of 1x ships")
             Exit Sub
         End If
@@ -1117,7 +1118,7 @@
     End Sub
 
     Private Sub Button20_Click(sender As Object, e As EventArgs) Handles Button20.Click
-        If Onexships >= 2 And variable20 = 0 Then
+        If Onexships >= 2 And variable20 = 0 And OnexClick = True Then
             MessageBox.Show("You already have the maximum amount of 1x ships")
             Exit Sub
         End If
@@ -1143,7 +1144,7 @@
     End Sub
 
     Private Sub Button21_Click(sender As Object, e As EventArgs) Handles Button21.Click
-        If Onexships >= 2 And variable21 = 0 Then
+        If Onexships >= 2 And variable21 = 0 And OnexClick = True Then
             MessageBox.Show("You already have the maximum amount of 1x ships")
             Exit Sub
         End If
@@ -1169,7 +1170,7 @@
     End Sub
 
     Private Sub Button22_Click(sender As Object, e As EventArgs) Handles Button22.Click
-        If Onexships >= 2 And variable22 = 0 Then
+        If Onexships >= 2 And variable22 = 0 And OnexClick = True Then
             MessageBox.Show("You already have the maximum amount of 1x ships")
             Exit Sub
         End If
@@ -1195,7 +1196,7 @@
     End Sub
 
     Private Sub Button23_Click(sender As Object, e As EventArgs) Handles Button23.Click
-        If Onexships >= 2 And variable23 = 0 Then
+        If Onexships >= 2 And variable23 = 0 And OnexClick = True Then
             MessageBox.Show("You already have the maximum amount of 1x ships")
             Exit Sub
         End If
@@ -1221,7 +1222,7 @@
     End Sub
 
     Private Sub Button24_Click(sender As Object, e As EventArgs) Handles Button24.Click
-        If Onexships >= 2 And variable24 = 0 Then
+        If Onexships >= 2 And variable24 = 0 And OnexClick = True Then
             MessageBox.Show("You already have the maximum amount of 1x ships")
             Exit Sub
         End If
@@ -1247,7 +1248,7 @@
     End Sub
 
     Private Sub Button25_Click(sender As Object, e As EventArgs) Handles Button25.Click
-        If Onexships >= 2 And variable25 = 0 Then
+        If Onexships >= 2 And variable25 = 0 And OnexClick = True Then
             MessageBox.Show("You already have the maximum amount of 1x ships")
             Exit Sub
         End If
@@ -1273,7 +1274,7 @@
     End Sub
 
     Private Sub Button26_Click(sender As Object, e As EventArgs) Handles Button26.Click
-        If Onexships >= 2 And variable26 = 0 Then
+        If Onexships >= 2 And variable26 = 0 And OnexClick = True Then
             MessageBox.Show("You already have the maximum amount of 1x ships")
             Exit Sub
         End If
@@ -1299,7 +1300,7 @@
     End Sub
 
     Private Sub Button27_Click(sender As Object, e As EventArgs) Handles Button27.Click
-        If Onexships >= 2 And variable27 = 0 Then
+        If Onexships >= 2 And variable27 = 0 And OnexClick = True Then
             MessageBox.Show("You already have the maximum amount of 1x ships")
             Exit Sub
         End If
@@ -1325,7 +1326,7 @@
     End Sub
 
     Private Sub Button28_Click(sender As Object, e As EventArgs) Handles Button28.Click
-        If Onexships >= 2 And variable28 = 0 Then
+        If Onexships >= 2 And variable28 = 0 And OnexClick = True Then
             MessageBox.Show("You already have the maximum amount of 1x ships")
             Exit Sub
         End If
@@ -1351,7 +1352,7 @@
     End Sub
 
     Private Sub Button29_Click(sender As Object, e As EventArgs) Handles Button29.Click
-        If Onexships >= 2 And variable29 = 0 Then
+        If Onexships >= 2 And variable29 = 0 And OnexClick = True Then
             MessageBox.Show("You already have the maximum amount of 1x ships")
             Exit Sub
         End If
@@ -1377,7 +1378,7 @@
     End Sub
 
     Private Sub Button30_Click(sender As Object, e As EventArgs) Handles Button30.Click
-        If Onexships >= 2 And variable30 = 0 Then
+        If Onexships >= 2 And variable30 = 0 And OnexClick = True Then
             MessageBox.Show("You already have the maximum amount of 1x ships")
             Exit Sub
         End If
@@ -1403,7 +1404,7 @@
     End Sub
 
     Private Sub Button31_Click(sender As Object, e As EventArgs) Handles Button31.Click
-        If Onexships >= 2 And variable31 = 0 Then
+        If Onexships >= 2 And variable31 = 0 And OnexClick = True Then
             MessageBox.Show("You already have the maximum amount of 1x ships")
             Exit Sub
         End If
@@ -1429,7 +1430,7 @@
     End Sub
 
     Private Sub Button32_Click(sender As Object, e As EventArgs) Handles Button32.Click
-        If Onexships >= 2 And variable32 = 0 Then
+        If Onexships >= 2 And variable32 = 0 And OnexClick = True Then
             MessageBox.Show("You already have the maximum amount of 1x ships")
             Exit Sub
         End If
@@ -1455,7 +1456,7 @@
     End Sub
 
     Private Sub Button33_Click(sender As Object, e As EventArgs) Handles Button33.Click
-        If Onexships >= 2 And variable33 = 0 Then
+        If Onexships >= 2 And variable33 = 0 And OnexClick = True Then
             MessageBox.Show("You already have the maximum amount of 1x ships")
             Exit Sub
         End If
@@ -1481,7 +1482,7 @@
     End Sub
 
     Private Sub Button34_Click(sender As Object, e As EventArgs) Handles Button34.Click
-        If Onexships >= 2 And variable34 = 0 Then
+        If Onexships >= 2 And variable34 = 0 And OnexClick = True Then
             MessageBox.Show("You already have the maximum amount of 1x ships")
             Exit Sub
         End If
@@ -1507,7 +1508,7 @@
     End Sub
 
     Private Sub Button35_Click(sender As Object, e As EventArgs) Handles Button35.Click
-        If Onexships >= 2 And variable35 = 0 Then
+        If Onexships >= 2 And variable35 = 0 And OnexClick = True Then
             MessageBox.Show("You already have the maximum amount of 1x ships")
             Exit Sub
         End If
@@ -1533,7 +1534,7 @@
     End Sub
 
     Private Sub Button36_Click(sender As Object, e As EventArgs) Handles Button36.Click
-        If Onexships >= 2 And variable36 = 0 Then
+        If Onexships >= 2 And variable36 = 0 And OnexClick = True Then
             MessageBox.Show("You already have the maximum amount of 1x ships")
             Exit Sub
         End If
@@ -1559,7 +1560,7 @@
     End Sub
 
     Private Sub Button37_Click(sender As Object, e As EventArgs) Handles Button37.Click
-        If Onexships >= 2 And variable37 = 0 Then
+        If Onexships >= 2 And variable37 = 0 And OnexClick = True Then
             MessageBox.Show("You already have the maximum amount of 1x ships")
             Exit Sub
         End If
@@ -1585,7 +1586,7 @@
     End Sub
 
     Private Sub Button38_Click(sender As Object, e As EventArgs) Handles Button38.Click
-        If Onexships >= 2 And variable38 = 0 Then
+        If Onexships >= 2 And variable38 = 0 And OnexClick = True Then
             MessageBox.Show("You already have the maximum amount of 1x ships")
             Exit Sub
         End If
@@ -1611,7 +1612,7 @@
     End Sub
 
     Private Sub Button39_Click(sender As Object, e As EventArgs) Handles Button39.Click
-        If Onexships >= 2 And variable39 = 0 Then
+        If Onexships >= 2 And variable39 = 0 And OnexClick = True Then
             MessageBox.Show("You already have the maximum amount of 1x ships")
             Exit Sub
         End If
@@ -1637,7 +1638,7 @@
     End Sub
 
     Private Sub Button40_Click(sender As Object, e As EventArgs) Handles Button40.Click
-        If Onexships >= 2 And variable40 = 0 Then
+        If Onexships >= 2 And variable40 = 0 And OnexClick = True Then
             MessageBox.Show("You already have the maximum amount of 1x ships")
             Exit Sub
         End If
@@ -1663,7 +1664,7 @@
     End Sub
 
     Private Sub Button41_Click(sender As Object, e As EventArgs) Handles Button41.Click
-        If Onexships >= 2 And variable41 = 0 Then
+        If Onexships >= 2 And variable41 = 0 And OnexClick = True Then
             MessageBox.Show("You already have the maximum amount of 1x ships")
             Exit Sub
         End If
@@ -1689,7 +1690,7 @@
     End Sub
 
     Private Sub Button42_Click(sender As Object, e As EventArgs) Handles Button42.Click
-        If Onexships >= 2 And variable42 = 0 Then
+        If Onexships >= 2 And variable42 = 0 And OnexClick = True Then
             MessageBox.Show("You already have the maximum amount of 1x ships")
             Exit Sub
         End If
@@ -1715,7 +1716,7 @@
     End Sub
 
     Private Sub Button43_Click(sender As Object, e As EventArgs) Handles Button43.Click
-        If Onexships >= 2 And variable43 = 0 Then
+        If Onexships >= 2 And variable43 = 0 And OnexClick = True Then
             MessageBox.Show("You already have the maximum amount of 1x ships")
             Exit Sub
         End If
@@ -1741,7 +1742,7 @@
     End Sub
 
     Private Sub Button44_Click(sender As Object, e As EventArgs) Handles Button44.Click
-        If Onexships >= 2 And variable44 = 0 Then
+        If Onexships >= 2 And variable44 = 0 And OnexClick = True Then
             MessageBox.Show("You already have the maximum amount of 1x ships")
             Exit Sub
         End If
@@ -1767,7 +1768,7 @@
     End Sub
 
     Private Sub Button45_Click(sender As Object, e As EventArgs) Handles Button45.Click
-        If Onexships >= 2 And variable45 = 0 Then
+        If Onexships >= 2 And variable45 = 0 And OnexClick = True Then
             MessageBox.Show("You already have the maximum amount of 1x ships")
             Exit Sub
         End If
@@ -1793,7 +1794,7 @@
     End Sub
 
     Private Sub Button46_Click(sender As Object, e As EventArgs) Handles Button46.Click
-        If Onexships >= 2 And variable46 = 0 Then
+        If Onexships >= 2 And variable46 = 0 And OnexClick = True Then
             MessageBox.Show("You already have the maximum amount of 1x ships")
             Exit Sub
         End If
@@ -1819,7 +1820,7 @@
     End Sub
 
     Private Sub Button47_Click(sender As Object, e As EventArgs) Handles Button47.Click
-        If Onexships >= 2 And variable47 = 0 Then
+        If Onexships >= 2 And variable47 = 0 And OnexClick = True Then
             MessageBox.Show("You already have the maximum amount of 1x ships")
             Exit Sub
         End If
@@ -1845,7 +1846,7 @@
     End Sub
 
     Private Sub Button48_Click(sender As Object, e As EventArgs) Handles Button48.Click
-        If Onexships >= 2 And variable48 = 0 Then
+        If Onexships >= 2 And variable48 = 0 And OnexClick = True Then
             MessageBox.Show("You already have the maximum amount of 1x ships")
             Exit Sub
         End If
@@ -1871,7 +1872,7 @@
     End Sub
 
     Private Sub Button49_Click(sender As Object, e As EventArgs) Handles Button49.Click
-        If Onexships >= 2 And variable49 = 0 Then
+        If Onexships >= 2 And variable49 = 0 And OnexClick = True Then
             MessageBox.Show("You already have the maximum amount of 1x ships")
             Exit Sub
         End If
@@ -1897,7 +1898,7 @@
     End Sub
 
     Private Sub Button50_Click(sender As Object, e As EventArgs) Handles Button50.Click
-        If Onexships >= 2 And variable50 = 0 Then
+        If Onexships >= 2 And variable50 = 0 And OnexClick = True Then
             MessageBox.Show("You already have the maximum amount of 1x ships")
             Exit Sub
         End If
@@ -1923,7 +1924,7 @@
     End Sub
 
     Private Sub Button51_Click(sender As Object, e As EventArgs) Handles Button51.Click
-        If Onexships >= 2 And variable51 = 0 Then
+        If Onexships >= 2 And variable51 = 0 And OnexClick = True Then
             MessageBox.Show("You already have the maximum amount of 1x ships")
             Exit Sub
         End If
@@ -1949,7 +1950,7 @@
     End Sub
 
     Private Sub Button52_Click(sender As Object, e As EventArgs) Handles Button52.Click
-        If Onexships >= 2 And variable52 = 0 Then
+        If Onexships >= 2 And variable52 = 0 And OnexClick = True Then
             MessageBox.Show("You already have the maximum amount of 1x ships")
             Exit Sub
         End If
@@ -1975,7 +1976,7 @@
     End Sub
 
     Private Sub Button53_Click(sender As Object, e As EventArgs) Handles Button53.Click
-        If Onexships >= 2 And variable53 = 0 Then
+        If Onexships >= 2 And variable53 = 0 And OnexClick = True Then
             MessageBox.Show("You already have the maximum amount of 1x ships")
             Exit Sub
         End If
@@ -2001,7 +2002,7 @@
     End Sub
 
     Private Sub Button54_Click(sender As Object, e As EventArgs) Handles Button54.Click
-        If Onexships >= 2 And variable54 = 0 Then
+        If Onexships >= 2 And variable54 = 0 And OnexClick = True Then
             MessageBox.Show("You already have the maximum amount of 1x ships")
             Exit Sub
         End If
@@ -2027,7 +2028,7 @@
     End Sub
 
     Private Sub Button55_Click(sender As Object, e As EventArgs) Handles Button55.Click
-        If Onexships >= 2 And variable55 = 0 Then
+        If Onexships >= 2 And variable55 = 0 And OnexClick = True Then
             MessageBox.Show("You already have the maximum amount of 1x ships")
             Exit Sub
         End If
@@ -2053,7 +2054,7 @@
     End Sub
 
     Private Sub Button56_Click(sender As Object, e As EventArgs) Handles Button56.Click
-        If Onexships >= 2 And variable56 = 0 Then
+        If Onexships >= 2 And variable56 = 0 And OnexClick = True Then
             MessageBox.Show("You already have the maximum amount of 1x ships")
             Exit Sub
         End If
@@ -2079,7 +2080,7 @@
     End Sub
 
     Private Sub Button57_Click(sender As Object, e As EventArgs) Handles Button57.Click
-        If Onexships >= 2 And variable57 = 0 Then
+        If Onexships >= 2 And variable57 = 0 And OnexClick = True Then
             MessageBox.Show("You already have the maximum amount of 1x ships")
             Exit Sub
         End If
@@ -2105,7 +2106,7 @@
     End Sub
 
     Private Sub Button58_Click(sender As Object, e As EventArgs) Handles Button58.Click
-        If Onexships >= 2 And variable58 = 0 Then
+        If Onexships >= 2 And variable58 = 0 And OnexClick = True Then
             MessageBox.Show("You already have the maximum amount of 1x ships")
             Exit Sub
         End If
@@ -2131,7 +2132,7 @@
     End Sub
 
     Private Sub Button59_Click(sender As Object, e As EventArgs) Handles Button59.Click
-        If Onexships >= 2 And variable59 = 0 Then
+        If Onexships >= 2 And variable59 = 0 And OnexClick = True Then
             MessageBox.Show("You already have the maximum amount of 1x ships")
             Exit Sub
         End If
@@ -2157,7 +2158,7 @@
     End Sub
 
     Private Sub Button60_Click(sender As Object, e As EventArgs) Handles Button60.Click
-        If Onexships >= 2 And variable60 = 0 Then
+        If Onexships >= 2 And variable60 = 0 And OnexClick = True Then
             MessageBox.Show("You already have the maximum amount of 1x ships")
             Exit Sub
         End If
@@ -2183,7 +2184,7 @@
     End Sub
 
     Private Sub Button61_Click(sender As Object, e As EventArgs) Handles Button61.Click
-        If Onexships >= 2 And variable61 = 0 Then
+        If Onexships >= 2 And variable61 = 0 And OnexClick = True Then
             MessageBox.Show("You already have the maximum amount of 1x ships")
             Exit Sub
         End If
@@ -2209,7 +2210,7 @@
     End Sub
 
     Private Sub Button62_Click(sender As Object, e As EventArgs) Handles Button62.Click
-        If Onexships >= 2 And variable62 = 0 Then
+        If Onexships >= 2 And variable62 = 0 And OnexClick = True Then
             MessageBox.Show("You already have the maximum amount of 1x ships")
             Exit Sub
         End If
@@ -2235,7 +2236,7 @@
     End Sub
 
     Private Sub Button63_Click(sender As Object, e As EventArgs) Handles Button63.Click
-        If Onexships >= 2 And variable63 = 0 Then
+        If Onexships >= 2 And variable63 = 0 And OnexClick = True Then
             MessageBox.Show("You already have the maximum amount of 1x ships")
             Exit Sub
         End If
@@ -2261,7 +2262,7 @@
     End Sub
 
     Private Sub Button64_Click(sender As Object, e As EventArgs) Handles Button64.Click
-        If Onexships >= 2 And variable64 = 0 Then
+        If Onexships >= 2 And variable64 = 0 And OnexClick = True Then
             MessageBox.Show("You already have the maximum amount of 1x ships")
             Exit Sub
         End If
@@ -2284,5 +2285,10 @@
             Onexships = Onexships - 1
 
         End If
+    End Sub
+
+    Private Sub Player1Ship2x_Click(sender As Object, e As EventArgs) Handles Player1Ship2x.Click
+        EnablePlayer1Ships()
+        TwoxClick = False
     End Sub
 End Class
