@@ -554,9 +554,12 @@
     End Sub
     Dim OnexClick As Boolean = False
     Dim TwoxClick As Boolean = False
+
+    Dim TwoxShipDeployed As Integer = 0
     Private Sub Player1Ship1x_Click(sender As Object, e As EventArgs) Handles Player1Ship1x.Click
         EnablePlayer1Ships()
         OnexClick = True
+        TwoxClick = False
     End Sub
     Dim variable1 As Integer = 0
     Dim variable2 As Integer = 0
@@ -645,6 +648,20 @@
             Button1.ForeColor = Color.Black
             variable1 = variable1 - 1
             Onexships = Onexships - 1
+
+        End If
+
+        If TwoxClick = True And TwoxShipDeployed <= 1 And Button1.BackColor = Color.Red Then
+            TwoxShipDeployed = TwoxShipDeployed + 1
+            Button1.BackColor = Color.Red
+            Button1.ForeColor = Color.Red
+            Button2.BackColor = Color.Red
+            Button2.ForeColor = Color.Red
+
+        ElseIf TwoxClick = True And TwoxShipDeployed = 2 And Button1.BackColor = Color.Red Then
+            TwoxShipDeployed = False
+            Button1.BackColor = Color.White
+            Button2.BackColor = Color.White
 
         End If
     End Sub
@@ -2289,6 +2306,7 @@
 
     Private Sub Player1Ship2x_Click(sender As Object, e As EventArgs) Handles Player1Ship2x.Click
         EnablePlayer1Ships()
-        TwoxClick = False
+        TwoxClick = True
+        OnexClick = False
     End Sub
 End Class
